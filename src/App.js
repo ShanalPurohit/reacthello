@@ -4,7 +4,7 @@ import Table from './Table.js';
 import Dropdown from './Dropdown.js';
 import Chart from './Chart.js';
 import Popper from './Popper.js';
-import Button from './Button.js';
+import Button1 from './Button.js';
 
 
 
@@ -14,7 +14,7 @@ function App() {
   return (
    
     <div className="App">
-     <Button/>
+     <Button1/>
     
       </div>
   );

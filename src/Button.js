@@ -7,23 +7,39 @@
  import Popper from './Popper.js';
  import tippy from 'tippy.js';
 import 'tippy.js/dist/tippy.css';
+import Button from 'react-bootstrap/Button';
 
-function Button(){
+function Button1(){
     
     tippy('#myButton', {
-        content: "Hello!", 
+        content: "There are four Notifications", 
         placement: 'top',
       });
+
+      tippy('#tabl', {
+        content: "Table", 
+        placement: 'top',
+      });
+
+      tippy('#dropdown', {
+        content: "Dropdown", 
+        placement: 'top',
+      });
+
+      tippy('#chart', {
+        content: "Chart", 
+        placement: 'top',
+      });
+
         const [active, setActive] = useState("table");
 
         return (
 <div className="demo">
     <nav className="demo1 p-3">
-  
-        <button className ="m-3"onClick={() => setActive ("table")}>Table</button>
-        <button className ="m-3"onClick={() => setActive ("dropdown")}>dropDown</button>
-        <button className ="m-3"onClick={() => setActive ("chart")}>Chart</button>
-        <button id="myButton">Notification</button>
+        <Button id="tabl"className ="m-3"onClick={() => setActive ("table")}>Table</Button>
+        <Button id="dropdown"className ="m-3"onClick={() => setActive ("dropdown")}>Dropdown</Button>
+        <Button id="chart"className ="m-3"onClick={() => setActive ("chart")}>Chart</Button>
+        <Button id="myButton">Notification</Button>
     
         
         
@@ -42,4 +58,4 @@ function Button(){
            
     }
 
-    export default Button;
+    export default Button1;
