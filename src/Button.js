@@ -4,6 +4,7 @@
  import Table from './Table.js';
  import Dropdown from './Dropdown.js';
  import Chart from './Chart.js';
+ import Apitable from './Apitable.js';
  import Popper from './Popper.js';
  import tippy from 'tippy.js';
 import 'tippy.js/dist/tippy.css';
@@ -40,6 +41,9 @@ function Button1(){
         <Button id="dropdown"className ="m-3"onClick={() => setActive ("dropdown")}>Dropdown</Button>
         <Button id="chart"className ="m-3"onClick={() => setActive ("chart")}>Chart</Button>
         <Button id="myButton">Notification</Button>
+        <Button id="api"className ="m-3"onClick={() => setActive ("apitable")}>GET Api Call</Button>
+
+        
     
         
         
@@ -50,6 +54,7 @@ function Button1(){
         {active === "table" && <Table/>}
         {active === "dropdown" && <Dropdown/>}
         {active === "chart" && <Chart/>}
+        {active === "apitable" && <Apitable/>}
        
     </div>
 </div>

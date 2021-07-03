@@ -1,6 +1,7 @@
 import * as ReactBootstarp from "react-bootstrap";
 import React from 'react'
 import MaterialTable from 'material-table'
+import {useEffect,useState} from 'react'
 
 
 function Table(){
@@ -47,5 +48,8 @@ function Table(){
 
 </div>
     )
+
+
+  
 }
 export default Table;
