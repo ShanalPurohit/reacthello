@@ -1,0 +1,66 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "amar",
+      "email": "amar@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "akash",
+      "email": "akash@gmail.com"
+    },
+    {
+      "name": "yogesh",
+      "email": "yogesh@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "shubham",
+      "email": "shubham@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "ashwin",
+      "email": "ash@gmail.com",
+      "id": 5
+    },
+
+    {
+      "name": "dk",
+      "email": "dk@gmail.com",
+      "id": 6
+    },
+
+    {
+      "name": "rushikesh",
+      "email": "rushi@gmail.com",
+      "id": 7
+    },
+
+    {
+      "name": "mark",
+      "email": "mark@gmail.com",
+      "id": 8
+    },
+
+    {
+      "name": "kevin",
+      "email": "kevin@gmail.com",
+      "id": 9
+    },
+
+    {
+      "name": "bill",
+      "email": "bill@gmail.com",
+      "id": 10
+    }
+  ]
+}
