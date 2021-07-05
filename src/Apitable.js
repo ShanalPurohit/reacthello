@@ -7,7 +7,7 @@ import table from 'react-table'
 function Api(){
     const [data,setData]=useState([])
  useEffect(()=>{
-   fetch("https://jsonplaceholder.typicode.com/users").then((result)=>{
+   fetch("http://localhost:3000/users").then((result)=>{
      result.json().then((resp)=>{
        setData(resp)
      })
