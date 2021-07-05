@@ -7,7 +7,7 @@ import table from 'react-table'
 function Api(){
     const [data,setData]=useState([])
  useEffect(()=>{
-   fetch("https://raw.githubusercontent.com/ShanalPurohit/reacthello/main/src/db.json").then((result)=>{
+   fetch("https://raw.githubusercontent.com/ShanalPurohit/reacthello/main/src/user.json").then((result)=>{
      result.json().then((resp)=>{
        setData(resp)
      })
