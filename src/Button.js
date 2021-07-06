@@ -41,7 +41,7 @@ function Button1(){
         <Button id="dropdown"className ="m-3"onClick={() => setActive ("dropdown")}>Dropdown</Button>
         <Button id="chart"className ="m-3"onClick={() => setActive ("chart")}>Chart</Button>
         <Button id="myButton">Notification</Button>
-        <Button id="api"className ="m-3"onClick={() => setActive ("apitable")}>GET Api Call</Button>
+        <Button id="api"className ="m-3"onClick={() => setActive ("apitable")}>Api Call</Button>
 
         
     

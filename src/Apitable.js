@@ -7,7 +7,7 @@ import table from 'react-table'
 function Api(){
     const [data,setData]=useState([])
  useEffect(()=>{
-   fetch("https://raw.githubusercontent.com/ShanalPurohit/reacthello/main/src/user.json").then((result)=>{
+   fetch("https://127.0.0.1:8000/employees/").then((result)=>{
      result.json().then((resp)=>{
        setData(resp)
      })
@@ -22,16 +22,18 @@ function Api(){
 
 <tr>
   <td>Id</td>
-  <td>Name</td>
-  <td>Email</td>
+  <td>First Name</td>
+  <td>Last Name</td>
+  <td>Emp ID</td>
 </tr>
 
 {
 data.map((item)=>
 <tr>
 <td>{item.id}</td>
-<td>{item.name}</td>
-<td>{item.email}</td>
+<td>{item.firstname}</td>
+<td>{item.lastname}</td>
+<td>{item.emp_id}</td>
 </tr>
 )
 
