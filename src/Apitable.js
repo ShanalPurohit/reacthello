@@ -7,7 +7,7 @@ import table from 'react-table'
 function Api(){
     const [data,setData]=useState([])
  useEffect(()=>{
-   fetch("https://127.0.0.1:8000/employees/").then((result)=>{
+   fetch("https://djangoapi22.herokuapp.com/employees/").then((result)=>{
      result.json().then((resp)=>{
        setData(resp)
      })
@@ -16,7 +16,7 @@ function Api(){
 
     return(
         <div class="tablebg">
-<h1 class="heading">Users</h1>
+ <h1 class="heading">Users</h1>
      
      <table class="apitable" border="5">
 
@@ -24,7 +24,7 @@ function Api(){
   <td>Id</td>
   <td>First Name</td>
   <td>Last Name</td>
-  <td>Emp ID</td>
+  <td>Emp_id</td>
 </tr>
 
 {
@@ -34,6 +34,7 @@ data.map((item)=>
 <td>{item.firstname}</td>
 <td>{item.lastname}</td>
 <td>{item.emp_id}</td>
+
 </tr>
 )
 
