@@ -7,7 +7,7 @@ import table from 'react-table'
 function Api(){
     const [data,setData]=useState([])
  useEffect(()=>{
-   fetch("https://djangoapi22.herokuapp.com/employees/",{
+   fetch("https://djangoapi22.herokuapp.com/",{
      method:'GET',
      headers:{
        'Content-Type':'application/json'
