@@ -21,7 +21,7 @@ function Api(){
 
     return(
         <div class="tablebg">
- <h1 class="heading">Users</h1>
+ <h1 class="heading">Employees List</h1>
      
      <table class="apitable" border="5">
 
