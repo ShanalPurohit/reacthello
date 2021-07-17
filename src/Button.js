@@ -41,7 +41,7 @@ function Button1(){
         <Button id="dropdown"className ="m-3"onClick={() => setActive ("dropdown")}>Dropdown</Button>
         <Button id="chart"className ="m-3"onClick={() => setActive ("chart")}>Chart</Button>
         <Button id="myButton">Notification</Button>
-        <Button id="api"className ="m-3"onClick={() => setActive ("apitable")}>Employees</Button>
+      
         
     </nav>
 
@@ -49,7 +49,7 @@ function Button1(){
         {active === "table" && <Table/>}
         {active === "dropdown" && <Dropdown/>}
         {active === "chart" && <Chart/>}
-        {active === "apitable" && <Apitable/>}
+        
        
     </div>
 </div>
